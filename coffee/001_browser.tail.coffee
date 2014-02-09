@@ -1,4 +1,3 @@
-root = window
 
 userAgentTests = [ {
 	name: "Android"
@@ -47,22 +46,22 @@ userAgentTests = [ {
 } ]
 
 # Create browser detection test methods
-root.isBrowser = {}
+angoolar.isBrowser = {}
 for test in userAgentTests
 	if test.regex?
-		root.isBrowser[ test.name ] = navigator.userAgent.match test.regex
+		angoolar.isBrowser[ test.name ] = navigator.userAgent.match test.regex
 	else if test.test?
-		root.isBrowser[ test.name ] = test.test.call()
+		angoolar.isBrowser[ test.name ] = test.test.call()
 
-root.$window   = angular.element window
-root.$document = angular.element document
-root.$html     = angular.element document.documentElement
+angoolar.$window   = angular.element window
+angoolar.$document = angular.element document
+angoolar.$html     = angular.element document.documentElement
 
 # Add either the class or the not-class to html element
 for test in userAgentTests
-	root.$html.addClass if root.isBrowser[ test.name ] then test.class else "not-#{ test.class }"
+	angoolar.$html.addClass if angoolar.isBrowser[ test.name ] then test.class else "not-#{ test.class }"
 		
-	# if root.isBrowser[ test.name ]
+	# if angoolar.isBrowser[ test.name ]
 	# 	( $ ".not-for-#{ test.class }" ).remove()
 	# else
 	# 	( $ ".for-#{ test.class }" ).remove()
