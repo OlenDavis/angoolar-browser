@@ -53,10 +53,6 @@ for test in userAgentTests
 	else if test.test?
 		angoolar.isBrowser[ test.name ] = test.test.call()
 
-angoolar.$window   = angular.element window
-angoolar.$document = angular.element document
-angoolar.$html     = angular.element document.documentElement
-
 # Add either the class or the not-class to html element
 for test in userAgentTests
 	angoolar.$html.addClass if angoolar.isBrowser[ test.name ] then test.class else "not-#{ test.class }"
