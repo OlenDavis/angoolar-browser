@@ -1,25 +1,27 @@
 {
-	"name"       : "angoolar-browser",
-	"authors"    : [ "Olen Davis <spelledlikeitsounds@gmail.com>" ],
-	"description": "This allows an AngOOlar project to easily develop specifically for various browsers.",
-	"keywords"   : [
-		"angoolar",
-		"angular",
-		"browser",
-		"support",
-		"cross",
-		"platform",
-		"crossplatform",
-		"crossbrowser"
-	],
-	"license" : "MIT",
-	"homepage": "http://angoolar.com",
-	"ignore"  : [
-		"**/.*",
-		"node_modules",
-		"bower_components"
-	],
-	"dependencies": {
-		"angoolar": "~0.2.0"
-	}
+  "name": "angoolar-browser",
+  "authors": [
+    "Olen Davis <spelledlikeitsounds@gmail.com>"
+  ],
+  "description": "This allows an AngOOlar project to easily develop specifically for various browsers.",
+  "keywords": [
+    "angoolar",
+    "angular",
+    "browser",
+    "support",
+    "cross",
+    "platform",
+    "crossplatform",
+    "crossbrowser"
+  ],
+  "license": "MIT",
+  "homepage": "http://angoolar.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angoolar": "~0.3.1"
+  }
 }
