@@ -17,7 +17,7 @@ userAgentTests = [ {
 	class: "iphone"
 }, {
 	name: "Mobile"
-	regex: /Android|IEMobile|iPhone|iPad|iPod/i
+	regex: /Android|IEMobile|iPhone|iPad|iPod|Mobile/i
 	class: "mobile"
 }, {
 	name: "Webkit"
