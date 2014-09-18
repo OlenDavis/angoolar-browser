@@ -4,6 +4,14 @@ userAgentTests = [ {
 	regex: /Android/i
 	class: "android"
 }, {
+	name: "AndroidTablet"
+	regex: /^(?=.*Android)(.(?!Mobile))*$/i
+	class: "androidtablet"
+}, {
+	name: "AndroidPhone"
+	regex: /Android(?=.*Mobile)/i
+	class: "androidphone"
+}, {
 	name: "iOS"
 	regex: /iPhone|iPad|iPod/i
 	class: "ios"
