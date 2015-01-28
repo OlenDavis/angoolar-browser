@@ -37,8 +37,8 @@ userAgentTests = [ {
 	class: "ff"
 }, {
 	name: "IE"
-	regex: /MSIE/i
 	class: "ie"
+	test: -> navigator.userAgent.match( /MSIE/i ) or ( navigator.appName is 'Netscape' and navigator.userAgent.match /Trident\// )
 }, {
 	name: "IE10"
 	regex: /MSIE 10/i
